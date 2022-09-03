@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container__mini{
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 1271px;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: #0E1D28;
+}
