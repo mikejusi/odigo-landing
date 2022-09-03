@@ -3,15 +3,115 @@
     padding: 0;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: initial;
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-900 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+
+/* container */
+
 .container__mini{
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 
 .container{
-    width: 1271px;
+    max-width: 1271px;
     margin: 0 auto;
 }
+
+/* container */
+
+/* header style start */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__wrapper{
+    display: flex;
+    padding-top: 56px;
+}
+
+.header__nav{
+    width: fit-content;
+    margin-left: auto;
+    align-self: center;
+}
+
+.header__list{
+    gap: 82px;
+    display: flex;
+    list-style: none;
+}
+
+.header__link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.header__link:active, .header__link:focus, .header__link:hover{
+    opacity: .75;
+}
+
+/* header style end */
+
+/* Benefits style start */
+
+.benefits{
+    height: 100vh;
+    background: url(../img/Benefits.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* Benefits style end */
 
 footer{
     background-color: #0E1D28;
