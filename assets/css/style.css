@@ -338,6 +338,7 @@ fieldset{
 }
 
 .sz__big{
+    height: 354px;
     grid-column: span 3;
 }
 
@@ -356,6 +357,11 @@ fieldset{
     height: 100%;
     object-fit: cover;
     transition: 0.15s all;
+}
+
+.sz__small{
+    height: 283px;
+    grid-column: span 2;
 }
 
 /* Trip style end */
