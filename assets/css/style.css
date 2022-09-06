@@ -76,6 +76,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0.5s;
 }
 
 .header__wrapper{
@@ -104,6 +105,15 @@ header{
 
 .header__link:active, .header__link:focus, .header__link:hover{
     opacity: .75;
+}
+
+.sticky{
+    z-index: 9999;
+    background-color: #608dc8;
+}
+
+.sticky .header__wrapper{
+    padding: 20px;
 }
 
 /* header style end */
