@@ -262,6 +262,104 @@ fieldset{
 
 /* Benefits style end */
 
+/* Trip style start */
+
+.trip__title{
+    position: relative;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    padding-bottom: 7px;
+    margin-right: 20px;
+}
+
+.trip__title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.title__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.view{
+    color: #006DFE;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    background: url(../img/Shape.svg) no-repeat right center;
+    padding-right: 59px;
+}
+
+.view:focus, .view:hover{
+    color: #005ed8;
+    transition: 0.2s;
+}
+
+.image__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.image__card{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.image__card:hover .pic__fg{
+    transform: scale(1.05);
+}
+
+.image__card::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.sz__big{
+    grid-column: span 3;
+}
+
+.img__title{
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    color: white;
+    font-size: 50px;
+    line-height: 60px;
+    z-index: 3;
+}
+
+.pic__fg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.15s all;
+}
+
+/* Trip style end */
+
 footer{
     background-color: #0E1D28;
 }
