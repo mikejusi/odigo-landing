@@ -379,3 +379,35 @@ fieldset{
 footer{
     background-color: #0E1D28;
 }
+
+/* Scroll to top style start */
+
+.btn__scroll__top{
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.8rem 1rem;
+    background-color: #608dc8;
+    width: fit-content;
+    border-radius: 50%;
+    -moz-box-shadow: 0 0 10px #608dc8;
+    -webkit-box-shadow: 0 0 10px #608dc8;
+    box-shadow: 0 0 10px #608dc8;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all;
+}
+
+.btn__scroll__top__active{
+    visibility: inherit;
+    opacity: 1;
+}
+
+.btn__scroll__top i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Scroll to top style end */
