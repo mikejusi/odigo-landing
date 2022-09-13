@@ -376,6 +376,56 @@ fieldset{
 
 /* Trip style end */
 
+/* Tours style start */
+
+.tours{
+    margin-top: 131px;
+    margin-bottom: 139px;
+}
+
+.tour__card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+
+.tour__info{
+    padding-left: 47px;
+}
+
+.tour__title{
+    max-width: 375px;
+    margin-bottom: 85px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.tour__desc{
+    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.more__info__tour{
+    color: #006DFE;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 59px;
+    background: url(../img/Shape.svg) no-repeat right center;
+}
+
+.more__info__tour:hover, .more__info__tour:focus{
+    transition: 0.2s all;
+    background: url(../img/Shape.svg) no-repeat 95% center;
+}
+
+/* Tours style end */
+
 footer{
     background-color: #0E1D28;
 }
