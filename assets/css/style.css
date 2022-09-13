@@ -442,6 +442,11 @@ fieldset{
     margin-bottom: 54px;
 }
 
+.card__places{
+    display: flex;
+    flex-direction: column;
+}
+
 .place__pic__cnt{
     position: relative;
     margin-bottom: 45px;
@@ -498,6 +503,8 @@ fieldset{
     background: #006DFE;
     color: white;
     padding: 12px 19px;
+    width: 118px;
+    margin: auto 0 0 0;
 }
 
 .place__more:hover, .place__more:focus, .place__more:active{
