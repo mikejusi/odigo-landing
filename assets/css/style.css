@@ -8,7 +8,7 @@ html{
 }
 
 *, *::after, *::before{
-    box-sizing: initial;
+    box-sizing: inherit;
 }
 
 /* lato-regular - latin */
@@ -425,6 +425,88 @@ fieldset{
 }
 
 /* Tours style end */
+
+/* places style start */
+
+.places{
+    margin-bottom: 86px;
+}
+
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.place__title{
+    margin-bottom: 54px;
+}
+
+.place__pic__cnt{
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.card__title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto 0 0;
+}
+
+.place__img__info{
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: rgba(21, 24, 36, 0.6);
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    padding: 16px 25px;
+}
+
+.heard{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding-right: 20px;
+    background: url(../img/heard.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.comment{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    padding-right: 23px;
+    background: url(../img/comment.svg) no-repeat right;
+}
+
+.card__place__desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+
+.place__more{
+    text-decoration: none;
+    background: #006DFE;
+    color: white;
+    padding: 12px 19px;
+}
+
+.place__more:hover, .place__more:focus, .place__more:active{
+    transition: .3;
+    background: #186fe0;
+}
+
+/* places style end */
+
 
 footer{
     background-color: #0E1D28;
