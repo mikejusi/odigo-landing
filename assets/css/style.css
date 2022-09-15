@@ -60,11 +60,13 @@ img{
 .container__mini{
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container{
     max-width: 1270px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* container */
@@ -82,6 +84,7 @@ header{
 .header__wrapper{
     display: flex;
     padding-top: 56px;
+    align-items: center;
 }
 
 .header__nav{
@@ -115,6 +118,23 @@ header{
 .sticky .header__wrapper{
     padding: 20px;
 }
+
+.active__burger::before{
+    transform: rotate(45deg);
+    top: auto!important;
+    bottom: 9px;
+}
+
+.active__burger::after{
+    transform: rotate(-45deg);
+    top: 8px!important;
+    bottom: -9px;
+}
+
+.active__burger span{
+    transform: scale(0);
+}
+
 
 /* header style end */
 
@@ -594,3 +614,83 @@ footer{
 }
 
 /* Scroll to top style end */
+
+
+/* Media style start */
+
+@media screen and (max-width: 710px) {
+    .header__burger{
+        cursor: pointer;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        width: 30px;
+        height: 20px;
+    }
+
+    .header__burger:hover{
+        transition: .2s;
+        opacity: .8;
+    }
+    
+    .header__burger::after,
+    .header__burger::before{
+        content: '';
+        background-color: #ffffff;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .header__burger::before{
+        top: 0;
+    }
+    
+    .header__burger::after{
+        bottom: 0;
+    }
+    
+    .burger_line{
+        position: absolute;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .header__nav{
+        display: none;
+    }
+
+    .nav__active{
+        position: absolute;
+        top: 73px;
+        left: 0;
+        display: inherit;
+        width: 100%;
+        justify-content: center;
+        background-color: #608dc8;
+        padding-bottom: 20px;
+    }
+
+    .header__list{
+        display: grid;
+        place-items: center;
+        gap: 20px;
+    }
+
+    header{
+        background-color: #608dc8;
+    }
+
+    .header__wrapper{
+        padding: 20px!important;
+    }
+}
+
+/* Media style end */
