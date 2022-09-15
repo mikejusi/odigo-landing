@@ -214,7 +214,7 @@ fieldset{
     color: #102746;
     padding: 93px 100px 88px 100px;
     position: absolute;
-    top: 0;
+    top: 1px;
     left: 0;
     transform: translateY(-100%);
 }
@@ -514,10 +514,54 @@ fieldset{
 
 /* places style end */
 
+/* footer style start */
 
 footer{
     background-color: #0E1D28;
+    padding: 119px 0;
 }
+
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo{
+    width: 50%;
+}
+
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu{
+    list-style: none;
+}
+
+.footer__menu__title{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer__menu__link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer__menu__link:hover, .footer__menu__link:focus, .footer__menu__link:active{
+    transition: .2s;
+    color: rgb(185, 185, 185);
+}
+
+/* footer style end */
 
 /* Scroll to top style start */
 
